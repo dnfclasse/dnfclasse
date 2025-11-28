@@ -1,7 +1,7 @@
-# React Native GTK (WIP)
-[![CircleCI](https://circleci.com/gh/Place1/react-native-gtk/tree/master.svg?style=shield)](https://circleci.com/gh/Place1/react-native-gtk/tree/master)
-[![npm](https://img.shields.io/npm/v/react-native-gtk.svg?style=flat-square)](https://www.npmjs.com/package/react-native-gtk)
-[![npm](https://img.shields.io/npm/dt/react-native-gtk.svg?style=flat-square)](https://www.npmjs.com/package/react-native-gtk)
+# dnfclasse
+[![CircleCI](https://circleci.com/gh/Place1/dnfclasse/tree/master.svg?style=shield)](https://circleci.com/gh/Place1/dnfclasse/tree/master)
+[![npm](https://img.shields.io/npm/v/dnfclasse.svg?style=flat-square)](https://www.npmjs.com/package/dnfclasse)
+[![npm](https://img.shields.io/npm/dt/dnfclasse.svg?style=flat-square)](https://www.npmjs.com/package/dnfclasse)
 
 React Native GTK allows developers to write ReactJS apps for desktop with native UI elements!
 
@@ -32,17 +32,17 @@ with the following command:
 This package makes use of [node-gir](https://github.com/Place1/node-gir). The node-gir package provides the
 [GObject Introspection](https://wiki.gnome.org/Projects/GObjectIntrospection) bindings that this library uses
 to interact with [GTK](https://developer.gnome.org/gtk3/stable/). In some cases you might want to
-debug/develop these two libraries (node-gir and react-native-gtk) together. Thankfully NPM provides a nice
+debug/develop these two libraries (node-gir and dnfclasse) together. Thankfully NPM provides a nice
 tool to do this called `npm link`
 
 ```
-git clone https://github.com/Place1/react-native-gtk
+git clone https://github.com/Place1/dnfclasse
 git clone https://github.com/Place1/node-gir
 
-cd react-native-gtk
+cd dnfclasse
 npm link ../node-gir
 
-# now 'react-native-gtk' will use your local copy of node-gir!
+# now 'dnfclasse' will use your local copy of node-gir!
 ```
 
 ## Contributing
@@ -59,7 +59,7 @@ Here are some helpful tips for code contributors:
 - Open your pull request early, even if you're not done so others can provide input/feedback!
 
 If you have input but don't want to/can't contribute code just yet, here's some other options:
-- Open issues to track bug's you've found using react-native-gtk
+- Open issues to track bug's you've found using dnfclasse
 - Open issues to contribute your thoughts/suggestions/questions about the future of the package
   and the direction the developers are taking!
 - Documentation: we haven't started our documentation efforts just yet but this will be a very
@@ -67,19 +67,19 @@ If you have input but don't want to/can't contribute code just yet, here's some 
 
 
 ## Roadmap
-react-native-gtk is currently in it's infancy and should be considered a work in progress!
+dnfclasse is currently in it's infancy and should be considered a work in progress!
 
 * There is still a lot of work to be done on the parent project, [node-gir](https://github.com/Place1/node-gir),
 to provide bullet proof GObject Introspection bindings for us to consume here.
 
-Many aspects of react-native-gtk are still being developed as well. The layout system (flexbox
+Many aspects of dnfclasse are still being developed as well. The layout system (flexbox
 using YogaLayout) still requires a lot of work to make sure it's fast and 'works as expected'
 on-top of GTK. The architecture behind the intrinsic react elements could also benefit from
 some detailed research and design proposal/improvements!
 
 This project may also want to consider producing CLI tools to make bundling/packaging
-applications easier. A react-native-gtk application will have three primary environmental
+applications easier. A dnfclasse application will have three primary environmental
 dependencies: node.js, gobject-introspection and GTK. How will our consumers (primarily NodeJS/JavaScript developers making
-desktop apps) convert their react-native-gtk code into an installable application for Mac, Windows
+desktop apps) convert their dnfclasse code into an installable application for Mac, Windows
 and Linux? The process from _hello world_ to final app should be quick and easy! If you have suggestions
 on this topic then please open an issue or contribute to existing issues relating to!
